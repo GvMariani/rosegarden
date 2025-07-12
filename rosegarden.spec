@@ -22,6 +22,7 @@ BuildRequires:	subversion
 BuildRequires:	ladspa-devel
 BuildRequires:	cmake(ECM)
 %if %{with qt6}
+BuildRequires:	qt6-linguist-tools
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Core5Compat)
 BuildRequires:	pkgconfig(Qt6Gui)
@@ -31,6 +32,7 @@ BuildRequires:	pkgconfig(Qt6Test)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(Qt6Xml)
 %else
+BuildRequires:	qt5-linguist-tools
 BuildRequires:	cmake(Qt5Core) >= 5.1.0
 BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Network)
